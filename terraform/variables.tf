@@ -27,3 +27,9 @@ variable "public_subnets_west" {
   description = "The list of public subnets for the first VPC"
   default = ["10.1.101.0/24"]
 }
+
+variable "demo_alb_sg_us_west_1" {
+  type = string
+  description = "The name of the ALB security group"
+  default = "demo-alb-sg-west-1"
+}
