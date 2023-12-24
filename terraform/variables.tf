@@ -33,3 +33,16 @@ variable "demo_alb_sg_us_west_1" {
   description = "The name of the ALB security group"
   default = "demo-alb-sg-west-1"
 }
+
+variable "domain_name" {
+  type = string
+  description = "This is for domain name"
+  default = "devopswithpawan.com"
+}
+
+
+variable "zone_id" {
+  type = string
+  description = "This is cloudflare domain zone ID"
+  default = "90572284afdc50898135330caabc303a"
+}
