@@ -10,7 +10,7 @@ module "demo_vpc_us_west_1" {
   
   tags = {
     Terraform = "true"
-    Environment = "demo"
+    Environment = "devops-demo"
   }
 
 }
