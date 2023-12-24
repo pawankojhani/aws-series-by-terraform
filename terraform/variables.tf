@@ -13,17 +13,17 @@ variable "demo_us_west_1_cidr" {
 variable "azs1" {
   type = list(string)
   description = "The list of AZs for the first VPC"
-  default = ["us-west-1a", "us-west-1b"]
+  default = ["us-west-1a"]
 }
 
 variable "private_subnets_west" {
   type = list(string)
   description = "The list of private subnets for the first VPC"
-  default = ["10.1.1.0/24", "10.1.2.0/24"]
+  default = ["10.1.1.0/24"]
 }
 
 variable "public_subnets_west" {
   type = list(string)
   description = "The list of public subnets for the first VPC"
-  default = ["10.1.101.0/24", "10.1.102.0/24"]
+  default = ["10.1.101.0/24"]
 }
