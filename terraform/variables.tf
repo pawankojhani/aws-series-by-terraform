@@ -57,3 +57,33 @@ variable "demo_ecr" {
   description = "Demo ECR Name"
   default     = "devops-demo-ecr"
 }
+
+variable "demo_cluster_us_west" {
+  type = string
+  description = "The name of the first ECS cluster"
+  default = "demo-cluster-west-1"
+}
+
+variable "demo_ecs_service_us_west" {
+  type = string
+  description = "The name of the first ECS service"
+  default = "demo-web-west-1"
+}
+
+variable "demo_ecs_container_cpu" {
+  type = number
+  description = "The number of CPU units for the ECS container"
+  default = 256
+}
+
+variable "demo_ecs_container_memory" {
+  type = number
+  description = "The amount of memory for the ECS container"
+  default = 512
+}
+
+variable "demo_ecs_container_us_west" {
+  type = string
+  description = "The name of the first ECS container"
+  default = "demo-web-container-west-1"
+}
