@@ -39,10 +39,3 @@ variable "domain_name" {
   description = "This is for domain name"
   default = "devopswithpawan.com"
 }
-
-
-variable "zone_id" {
-  type = string
-  description = "This is cloudflare domain zone ID"
-  default = "90572284afdc50898135330caabc303a"
-}
