@@ -51,3 +51,9 @@ variable "DEMO_HTTP_PORT" {
   description = "HTTP_PORT parameter"
   default     = 80
 }
+
+variable "demo_ecr" {
+  type        = string
+  description = "Demo ECR Name"
+  default     = "devops-demo-ecr"
+}
