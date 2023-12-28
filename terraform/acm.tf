@@ -1,5 +1,5 @@
 
-resource "aws_acm_certificate" "demo" {
+resource "aws_acm_certificate" "cert" {
   domain_name       = var.domain_name
   validation_method = "DNS"
 
@@ -10,9 +10,7 @@ resource "aws_acm_certificate" "demo" {
   lifecycle {
     create_before_destroy = true
   }
-   tags = {
-    Name = var.domain_name
-  } 
+  
 }
 
 
