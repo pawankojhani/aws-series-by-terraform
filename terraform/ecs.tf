@@ -27,8 +27,8 @@ module "ecs" {
 
   services = {
     ecsdemo-frontend = {
-      cpu    = var.demo_ecs_container_cpu
-      memory = var.demo_ecs_container_memory
+      cpu    = 1024
+      memory = 4096
 
       # Container definition(s)
       container_definitions = {
