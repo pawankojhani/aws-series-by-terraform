@@ -39,3 +39,15 @@ variable "domain_name" {
   description = "This is for domain name"
   default = "devopswithpawan.com"
 }
+
+variable "demo_alb_us_west" {
+  type = string
+  description = "The name of the first ALB"
+  default = "demo-alb-us-west"
+}
+
+variable "DEMO_HTTP_PORT" {
+  type        = number
+  description = "HTTP_PORT parameter"
+  default     = 80
+}
