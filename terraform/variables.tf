@@ -147,3 +147,9 @@ variable "mysql_parameter_group" {
   description = "The name of the RDS version"
   default = "mysql5.7"
 }
+
+variable "demo_rds_sg_us_west" {
+  type = string
+  description = "The name of the ALB security group"
+  default = "demo-rds-sg-west-1"
+}

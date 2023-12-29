@@ -14,7 +14,7 @@ module "demo_db" {
 
   iam_database_authentication_enabled = true
 
-  vpc_security_group_ids = ["sg-12345678"]
+  vpc_security_group_ids = module.demo_rds_sg_us_west.vpc_security_group_ids
 
   maintenance_window = "Mon:00:00-Mon:03:00"
   backup_window      = "03:00-06:00"
