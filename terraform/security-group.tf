@@ -33,7 +33,7 @@ module "demo_alb_sg_us_west_1" {
 module "demo_rds_sg_us_west" {
   source = "terraform-aws-modules/security-group/aws"
   name = var.demo_rds_sg_us_west
-  vpc_id = module.cardsecure_vpc_us_west_1.vpc_id
+  vpc_id = module.demo_vpc_us_west_1.vpc_id
 
   ingress_with_cidr_blocks = [
     {
