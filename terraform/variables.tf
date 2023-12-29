@@ -93,3 +93,57 @@ variable "demo_ecs_container_us_west" {
   description = "The name of the first ECS container"
   default = "demo-web-container-west-1"
 }
+
+variable "mysql_us_west" {
+  type = string
+  description = "The name of the first RDS for Demo"
+  default = "demo-instance"
+}
+
+variable "mysql_engine" {
+  type = string
+  description = "The name of the first RDS for Demo"
+  default = "mysql"
+}
+
+variable "mysql_version" {
+  type = string
+  description = "The name of the RDS version"
+  default = "5.7"
+}
+
+variable "mysql_instance_type" {
+  type = string
+  description = "The name of the RDS version"
+  default = "db.t3a.micro"
+}
+
+variable "mysql_demo_name" {
+  type = string
+  description = "The name of the RDS version"
+  default = "dbdemo"
+}
+
+variable "mysql_user" {
+  type = string
+  description = "The name of the RDS version"
+  default = "user"
+}
+
+variable "mysql_port" {
+  type = string
+  description = "The name of the RDS version"
+  default = "3306"
+}
+
+variable "mysql_sg_name" {
+  type = string
+  description = "The name of the RDS version"
+  default = "demo-rds-sg"
+}
+
+variable "mysql_parameter_group" {
+  type = string
+  description = "The name of the RDS version"
+  default = "mysql5.7"
+}
