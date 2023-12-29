@@ -39,7 +39,7 @@ module "cardsecure_ecs_service_us_west_1" {
         log_driver = "awslogs"
         options    = {
           "awslogs-group"         = aws_cloudwatch_log_group.ecs_log_group_west.name
-#          "awslogs-region"        = var.region1
+#         awslogs-region        = var.region
           "awslogs-stream-prefix" = "/ecs/${var.demo_ecs_service_us_west}/${var.demo_ecs_container_us_west}"
         }
 #      task_exec_iam_role_name = aws_iam_role.ecs_task_execution_role.name

@@ -1,3 +1,9 @@
+variable "region" {
+  type = string
+  description = "The AWS region for the first VPC"
+  default = "us-west-1"
+}
+
 variable "demo_vpc_us_west" {
   type = string
   description = "VPC Name"
