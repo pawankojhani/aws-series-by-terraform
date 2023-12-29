@@ -14,7 +14,7 @@ module "demo_cluster_us_west_1" {
     }
   }
 }
-module "cardsecure_ecs_service_us_west_1" {
+module "demo_ecs_service_us_west_1" {
   source = "terraform-aws-modules/ecs/aws//modules/service"
   name = var.demo_ecs_container_us_west
   cluster_arn = module.demo_cluster_us_west_1.cluster_arn
