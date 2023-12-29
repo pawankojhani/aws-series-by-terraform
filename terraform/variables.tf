@@ -115,7 +115,7 @@ variable "mysql_version" {
 variable "mysql_instance_type" {
   type = string
   description = "The name of the RDS version"
-  default = "db.t3a.micro"
+  default = "db.t3.micro"
 }
 
 variable "mysql_demo_name" {
