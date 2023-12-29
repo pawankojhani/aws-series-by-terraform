@@ -4,7 +4,6 @@
 
 module "demo_alb_sg_us_west_1" {
   source = "terraform-aws-modules/security-group/aws"
-  version = "v5.0"
   name = var.demo_alb_sg_us_west_1
   vpc_id = module.demo_vpc_us_west_1.vpc_id
 
