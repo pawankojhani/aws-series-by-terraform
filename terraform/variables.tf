@@ -154,14 +154,12 @@ variable "demo_rds_sg_us_west" {
   default = "demo-rds-sg-west-1"
 }
 
-variable "s3_bucket_one" {
-  type = string
-  description = "My Demo CloudFront can access"
-  default = "cf-demo"
+########### IAM GROUPS #############
+# List of IAM group names
+variable "iam_devops_admin_group" {
+  default = ["Admin"]
 }
 
-variable "s3_domain_one" {
-  type = string
-  description = "My Demo Domain S3 Bucket"
-  default = "demo-devop"
+variable "existing_iam_user_names" {
+  default = ["demo-devops" , "devops"]
 }
