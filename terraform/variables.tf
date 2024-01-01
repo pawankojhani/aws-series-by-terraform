@@ -102,7 +102,7 @@ variable "mysql_us_west" {
 
 variable "mysql_engine" {
   type = string
-  description = "The name of the first RDS for Demo"
+  description = "DB ENGINE"
   default = "mysql"
 }
 
@@ -153,3 +153,4 @@ variable "demo_rds_sg_us_west" {
   description = "The name of the ALB security group"
   default = "demo-rds-sg-west-1"
 }
+

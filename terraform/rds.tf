@@ -41,7 +41,7 @@ module "demo_db" {
   major_engine_version = "5.7"
 
   # Database Deletion Protection
-  deletion_protection = true
+  # deletion_protection = true
 
   parameters = [
     {
