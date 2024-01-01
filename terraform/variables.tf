@@ -154,3 +154,14 @@ variable "demo_rds_sg_us_west" {
   default = "demo-rds-sg-west-1"
 }
 
+variable "s3_bucket_one" {
+  type = string
+  description = "My Demo CloudFront can access"
+  default = "cf-demo"
+}
+
+variable "s3_domain_one" {
+  type = string
+  description = "My Demo Domain S3 Bucket"
+  default = "demo-devop"
+}
