@@ -157,7 +157,7 @@ variable "demo_rds_sg_us_west" {
 ########### IAM GROUPS #############
 # List of IAM group names
 variable "iam_devops_admin_group" {
-  default = ["Admin"]
+  default = ["Admin",]
 }
 
 variable "existing_iam_user_names" {
