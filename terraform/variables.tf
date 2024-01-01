@@ -161,5 +161,5 @@ variable "iam_devops_admin_group" {
 }
 
 variable "existing_iam_user_names" {
-  default = ["demo-devops" , "devops"]
+  default = ["devops"]
 }
