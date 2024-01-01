@@ -1,7 +1,7 @@
-module "demo_cdn" {
+module "cdn" {
   source = "terraform-aws-modules/cloudfront/aws"
 
-  aliases = ["demo.devopswithpawan.com"]
+  aliases = ["cdn.devopswithpawan.com"]
 
   comment             = "My Demo CloudFront"
   enabled             = true
@@ -12,16 +12,16 @@ module "demo_cdn" {
 
   create_origin_access_identity = true
   origin_access_identities = {
-    s3_bucket_one = var.s3_bucket_one
+    s3_bucket_one = "My Demo CloudFront can access"
   }
 
   logging_config = {
-    bucket = "logs-demo-cdn.s3.amazonaws.com"
+    bucket = "logs-my-demo-cdn.s3.amazonaws.com"
   }
 
   origin = {
     something = {
-      domain_name = "demo.devopswithpawan.com"
+      domain_name = "devopswithpawan.com"
       custom_origin_config = {
         http_port              = 80
         https_port             = 443
@@ -31,7 +31,7 @@ module "demo_cdn" {
     }
 
     s3_one = {
-      domain_name = var.s3_domain_one
+      domain_name = "my-demo-s3-bycket.s3.amazonaws.com"
       s3_origin_config = {
         origin_access_identity = "s3_bucket_one"
       }
@@ -62,7 +62,7 @@ module "demo_cdn" {
   ]
 
   viewer_certificate = {
-    acm_certificate_arn = aws_acm_certificate.cert.arn
+    acm_certificate_arn = aws_acm_certificate.cert.arn 
     ssl_support_method  = "sni-only"
   }
 }
